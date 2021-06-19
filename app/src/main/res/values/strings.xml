@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">TheDownloader</string>
+    <string name="app_name">The Downloader</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_phone_number">Phone Number</string>
+    <string name="prompt_otp">OTP</string>
+    <string name="log_in">Log In</string>
+    <string name="action_log_in_short">Log in</string>
+    <string name="invalid_phone_number">Not a valid phone number</string>
+    <string name="invalid_otp">OTP must be 4 characters</string>
+    <string name="login_successful">"Login Successful"</string>
+    <string name="login_failed">"OTP incorrect. Please try again."</string>
 </resources>
