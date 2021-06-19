@@ -6,7 +6,7 @@ package com.udayy.thedownloader.data
 
 class LoginRepository(val dataSource: LoginDataSource) {
 
-    fun login(phoneNumber: String, otp: Int): Result<Int> {
+    fun login(phoneNumber: String, otp: String): Result<Int> {
         // handle login
         return dataSource.login(phoneNumber, otp)
     }

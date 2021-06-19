@@ -13,7 +13,7 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.udayy.thedownloader.DownloadActivity
+import com.udayy.thedownloader.ui.download.DownloadActivity
 import com.udayy.thedownloader.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -85,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
                     EditorInfo.IME_ACTION_DONE ->
                         loginViewModel.login(
                             phoneNumber.text.toString(),
-                            otp.text.toString().toInt()
+                            otp.text.toString()
                         )
                 }
                 false
@@ -93,7 +93,7 @@ class LoginActivity : AppCompatActivity() {
 
             login.setOnClickListener {
                 loading.visibility = View.VISIBLE
-                loginViewModel.login(phoneNumber.text.toString(), otp.text.toString().toInt())
+                loginViewModel.login(phoneNumber.text.toString(), otp.text.toString())
             }
         }
     }

@@ -12,4 +12,7 @@
     <string name="prompt_url">Enter URL</string>
     <string name="download">Download</string>
     <string name="go">Go</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="invalid_url">Not a valid url</string>
+    <string name="download_start">Download started. Please check notification bar for progress.</string>
 </resources>

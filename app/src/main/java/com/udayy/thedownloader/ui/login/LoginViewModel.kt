@@ -1,6 +1,5 @@
 package com.udayy.thedownloader.ui.login
 
-import android.util.Patterns
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -16,7 +15,7 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
     private val _loginResult = MutableLiveData<LoginResult>()
     val loginResult: LiveData<LoginResult> = _loginResult
 
-    fun login(phoneNumber: String, otp: Int) {
+    fun login(phoneNumber: String, otp: String) {
         // can be launched in a separate asynchronous job
         val result = loginRepository.login(phoneNumber, otp)
 
@@ -39,7 +38,7 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
 
     // A placeholder phone number validation check
     private fun isPhoneNumberValid(phoneNumber: String): Boolean {
-        return Patterns.PHONE.matcher(phoneNumber).matches()
+        return phoneNumber.length == 10
     }
 
     // A placeholder otp validation check
