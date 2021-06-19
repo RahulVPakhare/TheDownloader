@@ -9,4 +9,7 @@
     <string name="invalid_otp">OTP must be 4 characters</string>
     <string name="login_successful">"Login Successful"</string>
     <string name="login_failed">"OTP incorrect. Please try again."</string>
+    <string name="prompt_url">Enter URL</string>
+    <string name="download">Download</string>
+    <string name="go">Go</string>
 </resources>

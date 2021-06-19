@@ -18,13 +18,13 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="24dp"
+        android:autofillHints="phone"
         android:hint="@string/prompt_phone_number"
         android:inputType="phone"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="phone" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/otp"
@@ -33,6 +33,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:autofillHints="otp"
         android:hint="@string/prompt_otp"
         android:imeActionLabel="@string/action_log_in_short"
         android:imeOptions="actionDone"
@@ -40,8 +41,7 @@
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_number"
-        android:autofillHints="otp" />
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
 
     <Button
         android:id="@+id/login"

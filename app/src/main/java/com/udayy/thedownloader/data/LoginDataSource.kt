@@ -6,7 +6,7 @@ package com.udayy.thedownloader.data
 class LoginDataSource {
 
     fun login(phoneNumber: String, otp: Int): Result<Int> {
-        // handle loggedInUser authentication
+        // handle otp authentication
         return if (otp == 1234) {
             Result.Success(1)
         } else {

@@ -13,7 +13,7 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.udayy.thedownloader.MainActivity
+import com.udayy.thedownloader.DownloadActivity
 import com.udayy.thedownloader.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -99,7 +99,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goToHome() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, DownloadActivity::class.java))
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
